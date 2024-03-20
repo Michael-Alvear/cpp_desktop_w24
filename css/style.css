@@ -1,0 +1,177 @@
+@media (prefers-reduced-motion: reduce) {
+    main,figure,pic,video, .animation,gif {
+      animation: none;
+    }
+    
+}
+
+body{
+    background-color: beige;
+}
+main{
+    background-color: white;
+    color: #323232;
+    overflow: wrap;
+}
+
+main p, main ul, main ol, main ol li{
+    width:100%;
+    overflow: wrap;
+}
+
+
+nav{
+    background-color: white;
+}
+
+.skip-main{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-main:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+nav ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+nav ul li{
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+li a:link{
+    text-decoration: none;
+}
+li a:visited{
+    text-decoration: none;
+}
+
+
+.active{
+    background-color: rgb(246, 212, 218);
+    
+}
+
+.active a{
+    font-size:30px;
+    font-weight: 900;
+}
+
+
+.pic img{
+    max-width: 300px;
+
+}
+
+img{
+    max-width: 300px;
+}
+h1{
+    font-size: 3.2em;
+}
+h2{
+    font-size: 1.9em;
+}
+
+
+.picture-gallery{
+    display:grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    /* max-width: ; */
+    /* grid-gap:2px; */
+}
+
+.picture-gallery img,video{
+    max-width: 150px;
+    border: 1px solid black;
+}
+
+figure{
+    margin: 0 0 0 3px;
+    
+}
+
+.night-mode {
+    background-color: rgb(56, 55, 55); /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+@media screen and (min-width:764px){
+    .picbio{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .picture-gallery{
+        justify-items: center;
+        align-items: center;
+    }
+    .food-gallery,.loc-gallery{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .loc-gallery{
+        flex-direction:column;
+    }
+    
+}
+
+@media screen and (min-width:900px){
+    .picbio{
+        display:block;
+        max-width: 900px;
+    }
+    .food-gallery,.loc-gallery{
+        display: block;
+    }
+    
+    p,div{
+        max-width: 800px;
+    }
+
+    main{
+        border: 2px solid black;
+        margin: auto;
+        width: 900px;
+        word-wrap: wrap;
+    }
+    .content{
+        margin:auto;
+        width: 1500px;
+    }
+    .texts p{
+        width: 800px;
+    }
+    img{
+        max-width: 900px;
+    }
+
+    .picture-gallery{
+        max-width: 900px;
+        justify-items: center;
+        
+    }
+    figure{
+        margin: 5px;
+    }
+
+}
