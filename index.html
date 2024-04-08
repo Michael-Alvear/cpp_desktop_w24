@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Welcome!</title>
 </head>
-<body>
+<body onload="date()">
     <a href="#main" class="skip-main" >Skip to Main Content</a>
     
     <header>
@@ -24,24 +24,27 @@
     </header>
 
     <main id="main">
-        <button id="night-mode-toggle">Toggle Night Mode</button>
-            <script>
-                const nightModeButton = document.getElementById('night-mode-toggle');
-                const body = document.body;
+        <div class="content">
+            <div id="date"></div>
+            <button id="night-mode-toggle">Toggle Night Mode</button>
+                <script>
+                    const nightModeButton = document.getElementById('night-mode-toggle');
+                    const body = document.body;
 
-                nightModeButton.addEventListener('click', () => {
-                    body.classList.toggle('night-mode');
-                });
-            </script>
+                    nightModeButton.addEventListener('click', () => {
+                        body.classList.toggle('night-mode');
+                    });
+                </script>
 
 
-        <h1> Welcome!</h1>
-        <p>Welcome to Dog with a Blog, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+            <h1> Welcome!</h1>
+            <p>Welcome to Dog with a Blog, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+        </div>
     </main>
 
     <footer>
-
+        
     </footer>
-    
+    <script type="text/javascript" src="javascript/scripts.js"></script>
 </body>
 </html>
