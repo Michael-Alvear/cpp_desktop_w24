@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Recipes</title>
 </head>
-<body>
+<body onload= "date()" >
     <a href = "#main" class="skip-main">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "pets.html">Pets</a></li>
-                <li class="active"><a href = "recipes.html">Recipes</a></li>
+                <li class="active">
+                    <a href = "recipes.html">Recipes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#chocolate_cookies">Double Chocolate Cookies</a></li>
+                        <li><a href="#chocolate_banana_bread">Chocolate Chip Banana Bread</a></li>
+                        <li><a href="#swedish_pancakes">Swedish Pancakes</a></li>
+                    </ul>
+                </li>
                 <li><a href = "travel.html">Travel</a></li>
             </ul>
         </nav>
@@ -23,7 +30,8 @@
 
     <main id="main">
         <div class = "content">
-            
+            <div id="date"> HELLLOO</div>
+                
             <button id="night-mode-toggle">Toggle Night Mode</button>
             <script>
                 const nightModeButton = document.getElementById('night-mode-toggle');
@@ -33,146 +41,178 @@
                     body.classList.toggle('night-mode');
                 });
             </script>
+            
+            <h1>Recipes</h1>
+
+            <div id ="chocolate_cookies" class="food">
+                <div class="picbio">
+                    <h2>Double Chocolate Cookies</h2>
+                    <p><strong>Origin:</strong> Michigan</p>
+                    <p><strong>Source:</strong> Family Recipe</p>
+                    <p><strong>Category:</strong> Dessert</p>
+                
+                    <img src="images/double_chocolate_cookies.png" width = "400" alt="Stack of Double Chocolate Cookies ">
+
+                    <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p> 
+                </div>
+
+                <div class="recipe list">
+                    <p><strong>Recipe Ingrediants:</strong></p>
+                    <ul>
+                        <li>Unsalted butter</li>
+                        <li>Granulated Sugar </li>
+                        <li>Packed light or dark brown sugar</li>
+                        <li>Large egg</li>
+                        <li>Pure vanilla extract</li>
+                        <li>Semi-sweet chocolate chunks (melted)</li>
+                        <li>All-purpose flour </li>
+                        <li>Natural unsweetened cocoa powder</li>
+                        <li>Baking soda</li>
+                        <li>Salt</li>
+                        <li>Semi-sweet chocolate chunks</li>
+                    </ul>
+                </div>
+                
+                <div class="steps list">
+                    <p><strong>Recipe Steps:</strong></p>
+                    <ol>
+                        <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                        <li>Add the egg and vanilla extract and beat well</li>
+                        <li>Add the melted chocolate</li>
+                        <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+                        <li>Combine the wet and dry ingredients</li>
+                        <li>Add the unmelted chocolate chunks.</li>
+                        <li>Form 15 cookies and place on a baking sheet.</li>
+                        <li>Cooke for 12 to 13 minutes at 350 degrees.</li>
+                    </ol>
+                    <p>Colleen van Lent</p>
+                </div>
+                <div class="gallery">
+                    <h3>Food Gallery</h3>
+                    <div class="food-gallery">
+                        <img src="images/double_chocolate_chips.png" width ="200" alt = "A small pile of chocolate chips">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545"  width ="200" alt="Chocolate melting in a boiler">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG"  width ="200" alt="Brown sugar in three different shades of darkness">
+                    </div>
+                </div>
+            </div>
+
+            <div id ="chocolate_banana_bread" class="food">
+                <div class="picbio">
+                    <h2>Chocolate Chip Banana Bread</h2>
+                    <p><strong>Origin:</strong> American </p>
+                    <p><strong>Source:</strong> <a href="https://www.delish.com/cooking/recipe-ideas/a43369646/chocolate-chip-banana-bread-recipe/"> Delish's Chocolate Chip Banana Bread</a> </p>
+                    <p><strong>Category:</strong> Dessert</p>
+                    
+                    <img src="images/chocolate_chip_banana_bread.jpg" width = "400" alt="Chocolate Chip Banana Bread fully cooked and placed in plastic container">
+                    
+                    <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect chocolate chip banana bread! Not only does it help utilize the bananas that have slowly overripened at the back of the fridge, it ends up creating an incredibly delicious, and relatively healthy, dessert. </p> 
+                </div>
+                
+                <div class="recipe list">
+                    <p><strong>Recipe Ingrediants:</strong></p>
+                    <ul>
+                        <li>Cooking spray</li>
+                        <li>2 cups (240 g) all-purpose flour</li>
+                        <li>1 tsp. baking soda</li>
+                        <li>1/2 tsp. kosher salt</li>
+                        <li>1 large egg plus 1 egg yolk </li>
+                        <li>1 cup (200 g) granulated sugar</li>
+                        <li>1/2 cup (1 stick) unsalted butter, melted</li>
+                        <li>1/4 cup sour cream</li>
+                        <li>1 tsp. pure vanilla extract </li>
+                        <li>3 ripe bananas, mashed</li>
+                        <li>1/2 cup chopped toasted walnuts</li>
+                        <li>1/2 cup semisweet chocolate chips</li>
+                    </ul>
+                </div>
+                
+                <div class="steps list">
+                    <p><strong>Recipe Steps:</strong></p>
+                    <ol>
+                        <li>Preheat the oven to 350º. Line a 9"-by-5" loaf pan with parchment and grease with cooking spray. </li>
+                        <li>In a medium bowl, whisk flour, baking soda, and salt.</li>
+                        <li>In a large bowl, mix egg, egg yolk, granulated sugar, butter, sour cream, and vanilla. Add bananas and stir until combined. Gradually add dry ingredients to banana mixture until just combined.</li>
+                        <li>Fold in walnuts and chocolate chips and transfer to prepared pan.</li>
+                        <li>Bake bread until a tester inserted into the center comes out clean, about 1 hour. Let cool 10 minutes in pan, then invert onto a wire rack and let cool completely.</li>
+                    </ol>
+                    <p>Ibrahim Moazzam & Memuna Tariq</p>
+                </div>
+                
+                <div class="gallery">
+                    <h3>Food Gallery</h3>
+                    <div class="food-gallery">
+                        <img src="https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg" width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
+                        <img src="https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg"  width ="200" alt="Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
+                        <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg"  width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
+                    </div>
+                </div>
+            </div>
+
+
+            <div id ="swedish_pancakes" class="food">
+                <div class="picbio">
+                    <h2>Swedish Pancakes</h2>
+                    <p><strong>Origin:</strong> Sweden </p>
+                    <p><strong>Source:</strong> <a href="https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/"> Kristi, true-north-kitchen.com </a> </p>
+                    <p><strong>Category:</strong> Breakfast</p>
+
+                    <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
+                    <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect Swedish Pancakes! It's an incredible dish to have for breakfast! </p> 
+                </div>
+                    
+                <div class="recipe list">
+                    <p><strong>Recipe Ingrediants:</strong></p>
+                    <ul>
+                        <li>Butter</li>
+                        <li>Sugar</li>
+                        <li>Eggs</li>
+                        <li>Vanilla</li>
+                        <li>Milk</li>
+                        <li>Water</li>
+                        <li>Salt</li>
+                        <li>Flour</li>
+                    </ul>
+                </div>
+                
+                <div class="steps list">
+                    <p><strong>Recipe Steps:</strong></p>
+                    <ol>
+                        <li> Combine all ingredients in a blender and blend until completely smooth.Transfer to the refrigerator to rest for at least 2 hours or up to 2 days. </li>
+                        <li>Preheat the oven to 200 degrees if you plan to eat the pannkakor right away.  Heat a 10 inch nonstick skillet over medium heat.  Stir the batter briefly to recombine. Brush skillet with melted butter.  Pick the skillet up off of the burner and quickly add ¼ cup of batter. Immediately begin swirling the batter around the skillet so that it coats the bottom of the pan.  Continue swirling until the batter is just set.  Return skillet to the burner. Cook until the pancake is golden brown in spots on the bottom, about 30 seconds. Use a thin spatula to loosen the pancake, flip it over continue to cook on the other side for about 30 seconds.  Transfer to a plate. Cover with foil and transfer to oven to keep warm and repeat with remaining batter, wiping out skillet in between pancakes with paper towel as needed.</li>
+                        <li>Serve with lingonberry jam and butter (see note below) or other desired toppings and/or fillings. See notes below for more information about making ahead of time and storing in the refrigerator or freezer.</li>
+                    </ol>
+                    <p>Alyssa Sklar</p>
+                </div>
+
+                <div class="gallery">
+                    <h3>Food Gallery</h3>
+                    <div class="food-gallery">
+                        <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
+                        <img src="https://true-north-kitchen.com/wp-content/uploads/2020/12/swedish-pancakes-9.jpg"  width ="200" alt="A thin layer of pancake batter cooking in a stainless steel pan.">
+                    </div>                        
+                </div>
+
+            </div>
+
+        </div>
         
-        <h1>Recipes</h1>
-
-        <div id ="chocolate_cookies">
-            <h2>Double Chocolate Cookies</h2>
-            <p><strong>Origin:</strong> Michigan</p>
-            <p><strong>Source:</strong> Family Recipe</p>
-            <p><strong>Category:</strong> Dessert</p>
-            
-            <div class="picbio">
-                <img src="images/double_chocolate_cookies.png" width = "400" alt="Stack of Double Chocolate Cookies ">
-
-                <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p> 
-            </div>
-
-            <p><strong>Recipe Ingrediants:</strong></p>
-            <ul>
-                <li>Unsalted butter</li>
-                <li>Granulated Sugar </li>
-                <li>Packed light or dark brown sugar</li>
-                <li>Large egg</li>
-                <li>Pure vanilla extract</li>
-                <li>Semi-sweet chocolate chunks (melted)</li>
-                <li>All-purpose flour </li>
-                <li>Natural unsweetened cocoa powder</li>
-                <li>Baking soda</li>
-                <li>Salt</li>
-                <li>Semi-sweet chocolate chunks</li>
-            </ul>
-            
-            <p><strong>Recipe Steps:</strong></p>
-            <ol>
-                <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
-                <li>Add the egg and vanilla extract and beat well</li>
-                <li>Add the melted chocolate</li>
-                <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
-                <li>Combine the wet and dry ingredients</li>
-                <li>Add the unmelted chocolate chunks.</li>
-                <li>Form 15 cookies and place on a baking sheet.</li>
-                <li>Cooke for 12 to 13 minutes at 350 degrees.</li>
-            </ol>
-
-
-            <h3>Food Gallery</h3>
-            <div class="food-gallery">
-                <img src="images/double_chocolate_chips.png" width ="200" alt = "A small pile of chocolate chips">
-                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545"  width ="200" alt="Chocolate melting in a boiler">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG"  width ="200" alt="Brown sugar in three different shades of darkness">
-            </div>
-            
-            <p>Colleen van Lent</p>
-        </div>
-
-        <div id ="chocolate_banana_bread">
-            <h2>Chocolate Chip Banana Bread</h2>
-            <p><strong>Origin:</strong> American </p>
-            <p><strong>Source:</strong> <a href="https://www.delish.com/cooking/recipe-ideas/a43369646/chocolate-chip-banana-bread-recipe/"> Delish's Chocolate Chip Banana Bread</a> </p>
-            <p><strong>Category:</strong> Dessert</p>
-            
-            <div class="picbio">
-                <img src="images/chocolate_chip_banana_bread.jpg" width = "400" alt="Chocolate Chip Banana Bread fully cooked and placed in plastic container">
-                
-                <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect chocolate chip banana bread! Not only does it help utilize the bananas that have slowly overripened at the back of the fridge, it ends up creating an incredibly delicious, and relatively healthy, dessert. </p> 
-            </div>
-            
-            <p><strong>Recipe Ingrediants:</strong></p>
-            <ul>
-                <li>Cooking spray</li>
-                <li>2 cups (240 g) all-purpose flour</li>
-                <li>1 tsp. baking soda</li>
-                <li>1/2 tsp. kosher salt</li>
-                <li>1 large egg plus 1 egg yolk </li>
-                <li>1 cup (200 g) granulated sugar</li>
-                <li>1/2 cup (1 stick) unsalted butter, melted</li>
-                <li>1/4 cup sour cream</li>
-                <li>1 tsp. pure vanilla extract </li>
-                <li>3 ripe bananas, mashed</li>
-                <li>1/2 cup chopped toasted walnuts</li>
-                <li>1/2 cup semisweet chocolate chips</li>
-            </ul>
-            
-            <p><strong>Recipe Steps:</strong></p>
-            <ol>
-                <li>Preheat the oven to 350º. Line a 9"-by-5" loaf pan with parchment and grease with cooking spray. </li>
-                <li>In a medium bowl, whisk flour, baking soda, and salt.</li>
-                <li>In a large bowl, mix egg, egg yolk, granulated sugar, butter, sour cream, and vanilla. Add bananas and stir until combined. Gradually add dry ingredients to banana mixture until just combined.</li>
-                <li>Fold in walnuts and chocolate chips and transfer to prepared pan.</li>
-                <li>Bake bread until a tester inserted into the center comes out clean, about 1 hour. Let cool 10 minutes in pan, then invert onto a wire rack and let cool completely.</li>
-            </ol>
-            <h3>Food Gallery</h3>
-            <div class="food-gallery">
-                <img src="https://www.thegeneticchef.com/wp-content/uploads/2022/07/Chocolate-Walnut-Banana-Bread-1.jpg" width ="200" alt = "A close-up image of a chocolate chip banana bread slice with 2 other slices in the background">
-                <img src="https://braziliankitchenabroad.com/wp-content/uploads/2022/04/Chocolate-Chip-Banana-Bread-with-Walnuts-5.jpg"  width ="200" alt="Four slices of chocolate chip banana bread, topped with walnuts, resting on a wire rack">
-                <img src="https://somethingnutritiousblog.com/wp-content/uploads/2019/04/fullsizeoutput_161-1617x2048.jpeg"  width ="200" alt="A top-down image of a sliced loaf of chocolate chip banana bread">
-            </div>
-            <p>Ibrahim Moazzam & Memuna Tariq</p>
-        </div>
-
-
-        <div id ="swedish_pancakes">
-            <h2>Swedish Pancakes</h2>
-            <p><strong>Origin:</strong> Sweden </p>
-            <p><strong>Source:</strong> <a href="https://true-north-kitchen.com/swedish-pancakes-with-lingonberries/"> Kristi, true-north-kitchen.com </a> </p>
-            <p><strong>Category:</strong> Breakfast</p>
-
-            <div class="picbio">
-                <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
-                <p>This is a tried-and-tested recipe that I have used numerous times for making the perfect Swedish Pancakes! It's an incredible dish to have for breakfast! </p> 
-            </div>
-                
-            <p><strong>Recipe Ingrediants:</strong></p>
-            <ul>
-                <li>Butter</li>
-                <li>Sugar</li>
-                <li>Eggs</li>
-                <li>Vanilla</li>
-                <li>Milk</li>
-                <li>Water</li>
-                <li>Salt</li>
-                <li>Flour</li>
-            </ul>
-            
-            <p><strong>Recipe Steps:</strong></p>
-            <ol>
-                <li> Combine all ingredients in a blender and blend until completely smooth.Transfer to the refrigerator to rest for at least 2 hours or up to 2 days. </li>
-                <li>Preheat the oven to 200 degrees if you plan to eat the pannkakor right away.  Heat a 10 inch nonstick skillet over medium heat.  Stir the batter briefly to recombine. Brush skillet with melted butter.  Pick the skillet up off of the burner and quickly add ¼ cup of batter. Immediately begin swirling the batter around the skillet so that it coats the bottom of the pan.  Continue swirling until the batter is just set.  Return skillet to the burner. Cook until the pancake is golden brown in spots on the bottom, about 30 seconds. Use a thin spatula to loosen the pancake, flip it over continue to cook on the other side for about 30 seconds.  Transfer to a plate. Cover with foil and transfer to oven to keep warm and repeat with remaining batter, wiping out skillet in between pancakes with paper towel as needed.</li>
-                <li>Serve with lingonberry jam and butter (see note below) or other desired toppings and/or fillings. See notes below for more information about making ahead of time and storing in the refrigerator or freezer.</li>
-            </ol>
-
-
-            <h3>Food Gallery</h3>
-            <div class="food-gallery">
-                <img src="images/swedish-pancakes-platted.jpeg" width = "400" alt="Plate with 3 Swedish pancakes topped with powdered sugar and blue berries">
-                <img src="https://true-north-kitchen.com/wp-content/uploads/2020/12/swedish-pancakes-9.jpg"  width ="200" alt="A thin layer of pancake batter cooking in a stainless steel pan.">
-            </div>                        
-            
-            <p>Alyssa Sklar</p>
-        </div>
-
     </main>
+
+    <script>
+        // JavaScript to show dropdown menu on hover
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const recipesNavItem = document.querySelector('.active');
+
+        recipesNavItem.addEventListener('mouseover', () => {
+            dropdownMenu.style.display = 'block';
+        });
+
+        recipesNavItem.addEventListener('mouseout', () => {
+            dropdownMenu.style.display = 'none';
+        });
+    </script>
     
+    <script type="text/javascript" src="javascript/scripts.js"></script>
 </body>
 </html>
