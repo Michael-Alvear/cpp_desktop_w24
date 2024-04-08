@@ -6,47 +6,45 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
-        function displayInformation () {
-            // Your code goes here. 
-            // Do not change any other code in this file
-            // All of the steps below must be achieved using JavaScript!
+        // function displayInformation () {
+        //     // Your code goes here. 
+        //     // Do not change any other code in this file
+        //     // All of the steps below must be achieved using JavaScript!
     
             
-            // 1. Change the h1 element to your name.
-            document.querySelector("h1").innerHTML="Michael"
+        //     // 1. Change the h1 element to your name.
+        //     document.querySelector("h1").innerHTML="Michael"
                
-            // 2. Update the three span elements using ONLY JavaScript
-            document.getElementById("URL").innerHTML = document.URL;
-            document.getElementById("items").innerHTML = document.querySelectorAll("h2").length;
-            document.getElementById("time").innerHTML = new Date();
+        //     // 2. Update the three span elements using ONLY JavaScript
+        //     document.getElementById("URL").innerHTML = document.URL;
+        //     document.getElementById("items").innerHTML = document.querySelectorAll("h2").length;
+        //     document.getElementById("time").innerHTML = new Date();
 
-            // 3. Change the background color and margin for the entire page.
-            document.body.style.background = "yellow";
-            document.body.style.margin= "30px";
+        //     // 3. Change the background color and margin for the entire page.
+        //     document.body.style.background = "yellow";
+        //     document.body.style.margin= "30px";
 
-        }
+        // }
     
-        // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
-        // Each occurrence should be on a separate line.  Don't use 
-        // paragraphs. 
-        function copyFunction(){
-            document.getElementById("cheer").innerHTML += "<br>Go Blue!\n"
-        }
+        // // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
+        // // Each occurrence should be on a separate line.  Don't use 
+        // // paragraphs. 
+        // function copyFunction(){
+        //     document.getElementById("cheer").innerHTML += "<br>Go Blue!\n"
+        // }
 
 
     </script>
     <title>Pets</title>
 </head>
-<body onload="displayInformation()">
+<!-- <body onload="displayInformatiofn()"> -->
+<body onload="date()">
     <a href = "#main" class="skip-main">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li class="active"><a href = "pets.html">Pets</a></li>
-                <!-- <ul>
-                    <li>hi</li>
-                </ul> -->
+                <li class="active"><a href = "pets.html">Pets</a></li>  
                 <li><a href = "recipes.html">Recipes</a></li>
                 <li><a href = "travel.html">Travel</a></li>
             </ul>
@@ -55,7 +53,7 @@
 
     <main id="main">
         
-        <div>
+        <!-- <div>
             <h2>Use JavaScript to display the following information here:</h2>
 	        <p>
                 The URL of this page is: <span id = "URL"></span><br/>
@@ -67,10 +65,11 @@
 
 	        
             <div id="cheer"></div>
-        </div>
+        </div> -->
 
         
         <div class = "content">
+            <div id="date"></div>
         
             <button id="night-mode-toggle">Toggle Night Mode</button>
             <script>
@@ -122,7 +121,7 @@
             </div>
     
     
-            <div id="pluto">
+            <div id="pluto" class="pet-container">
                 <div class="picbio">
                     <div class="pic">
                         <h2>Pluto</h2>
@@ -159,7 +158,7 @@
             </div>
     
     
-            <div id="sage">
+            <div id="sage" class="pet-container">
                 
                 <div class="picbio">
                     <div class = "pic">
@@ -197,7 +196,7 @@
             </div>
     
     
-            <div id="juno">
+            <div id="juno" class="pet-container">
 
                 <div class="picbio">
                     <div class="pic">
@@ -237,7 +236,7 @@
             </div>
     
     
-            <div id="Miumiu">
+            <div id="Miumiu" class="pet-container">
                 
                 <div class="picbio">
                     <div class = pic>
@@ -280,7 +279,8 @@
             </div>
             
         </div>
+        
     </main>
-    
+    <script type="text/javascript" src="javascript/scripts.js"></script>
 </body>
 </html>
